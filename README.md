@@ -25,7 +25,7 @@ Students can explore internships, scholarships, clubs, events, and other opportu
 
 - **Frontend**: React 18 + Vite, SVG-based force-directed graph (no charting libraries)
 - **Backend**: Vercel serverless function (`/api/scrape`)
-- **Database**: Supabase (PostgreSQL + real-time subscriptions)
+- **Database**: Supabase 
 - **AI**: Groq API for fast LLM inference, Jina AI Reader for page scraping
 
 ## Project Structure
