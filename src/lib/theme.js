@@ -1,4 +1,4 @@
-// Only dark mode colors
+// Theme color definitions for dark and light modes
 export const themeColors = {
   dark: {
     // App shell
@@ -63,5 +63,70 @@ export const themeColors = {
       skyline: '#3d1515',
     },
     majorDim: '#3d2700',
+  },
+
+  light: {
+    // App shell
+    appBg: '#fafaf8',
+    appText: '#1a1a16',
+    elevatedBg: '#ffffff',
+    cardBg: '#ffffff',
+    secondaryText: '#6b6b65',
+    mutedText: '#a3a39d',
+    border: 'rgba(0,0,0,0.08)',
+    borderLight: 'rgba(0,0,0,0.1)',
+    borderMedium: 'rgba(0,0,0,0.12)',
+    inputBg: '#f5f5f2',
+    inputText: '#1a1a16',
+    inputPlaceholder: '#a3a39d',
+    buttonBg: '#1a1a16',
+    buttonText: '#fafaf8',
+    overlay: 'rgba(0,0,0,0.4)',
+    overlayLight: 'rgba(0,0,0,0.3)',
+    successBg: 'rgba(34,197,94,0.1)',
+    successText: '#16a34a',
+    errorBg: 'rgba(249,115,22,0.1)',
+    errorText: '#ea580c',
+    warningBg: 'rgba(245,158,11,0.06)',
+    warningBorder: 'rgba(245,158,11,0.12)',
+
+    // BubbleMap / SVG
+    nodeDimDefault: '#f0f0ec',
+    nodeDimResource: '#f5f5f0',
+    nodeDimDistrict: '#f0f0ec',
+    edgeColor: '#d4d4cf',
+    edgeColorLight: '#c4c4bf',
+    legendText: '#a3a39d',
+    emptyStateTitle: '#1a1a16',
+    emptyStateSub: '#6b6b65',
+    filterPanelBg: 'rgba(255,255,255,0.9)',
+    filterPanelBgSolid: 'rgba(255,255,255,0.95)',
+    filterPanelBorder: 'rgba(0,0,0,0.1)',
+    zoomControlBg: '#ffffff',
+    zoomControlBorder: 'rgba(0,0,0,0.1)',
+    zoomControlText: '#1a1a16',
+    hintText: '#c4c4bf',
+    detailOverlay: 'rgba(0,0,0,0.4)',
+    detailCardBg: '#ffffff',
+    detailText: '#1a1a16',
+    detailOrg: '#6b6b65',
+    detailDesc: '#4a4a45',
+    detailCloseBtnBorder: 'rgba(0,0,0,0.1)',
+    detailCloseBtnText: '#6b6b65',
+    detailDeadlineUrgentBg: '#fff7ed',
+    detailDeadlineUrgentText: '#d97706',
+    detailDeadlineNormalBg: '#f5f5f2',
+    detailDeadlineNormalText: '#6b6b65',
+    detailNoLinkText: '#a3a39d',
+    textShadow: '0 1px 3px rgba(0,0,0,0.15)',
+    resourceTextHasLink: '#1a1a16',
+    resourceTextNoLink: 'rgba(26,26,22,0.7)',
+
+    schoolDim: {
+      canada: '#e8f5ef',
+      csm: '#e9ecf5',
+      skyline: '#fceaea',
+    },
+    majorDim: '#fff8e1',
   },
 }

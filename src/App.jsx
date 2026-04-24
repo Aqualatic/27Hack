@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { useResources } from './hooks/useResources'
+import { useTheme } from './hooks/useTheme.jsx'
 import { BubbleMap } from './components/BubbleMap'
 import { AddResourceModal } from './components/AddResourceModal'
-import { WelcomeModal } from './components/WelcomeModal'
 
 export default function App() {
   const { resources, loading, error, addResource } = useResources()
+  const { toggleTheme, isDark } = useTheme()
   const [showModal, setShowModal] = useState(false)
-  const [showWelcome, setShowWelcome] = useState(true)
   const [searchQuery, setSearchQuery] = useState('')
 
   if (loading) return (
@@ -33,6 +33,13 @@ export default function App() {
           </p>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <button
+            className="btn-icon"
+            onClick={toggleTheme}
+            title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+          >
+            {isDark ? '☀' : '☾'}
+          </button>
           <button className="btn btn-primary" onClick={() => setShowModal(true)}>
             + Add link
           </button>
@@ -60,8 +67,6 @@ export default function App() {
           onAdded={res => { addResource(res); setShowModal(false) }}
         />
       )}
-
-      {showWelcome && <WelcomeModal onClose={() => setShowWelcome(false)} />}
     </div>
   )
 }
